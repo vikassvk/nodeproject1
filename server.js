@@ -25,7 +25,7 @@ app.use(urlencodedParser);
 
 const student = require('./studentmodel');
 const bodyParser = require('body-parser');
-console.log(student);
+// console.log(student);
 
 
 
