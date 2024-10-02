@@ -4,10 +4,7 @@ require('dotenv').config();
 const mongoUrl = process.env.MONGODBATLASURL;
 // const mongoUrl = "mongodb://localhost:27017/student";
 
-mongoose.connect(mongoUrl,{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-});
+mongoose.connect(mongoUrl);
 
 
 const db = mongoose.connection;

@@ -55,20 +55,20 @@ app.post('/create', async(req,res)=>{
  }
 })
 
-// app.get("/read", async(req,res)=>{
-// try{
-//     // const id = req.params.id;
+app.get("/read", async(req,res)=>{
+try{
+    // const id = req.params.id;
 
-//     const response =  await student.find();
-//     res.send(response);
+    const response =  await student.find();
+    res.send(response);
 
-// }catch(err){
-//     console.log(err);
-// }
+}catch(err){
+    console.log(err);
+}
 
-//     // res.send("person found");
-// }
-// );
+    // res.send("person found");
+}
+);
 
 app.post("/update/:id", async(req,res)=>{
     try {
